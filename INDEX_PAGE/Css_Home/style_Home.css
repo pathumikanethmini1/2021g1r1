@@ -1,0 +1,244 @@
+/*CODE FOR NAV BAR AND HEADER CONTENT PC*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #f2f2f2;
+  margin: 0px;
+  padding: 0px;
+}
+nav {
+  background: #cad2c5;
+  margin: 0px;
+  padding: 0px;
+}
+nav:not(img) {
+  opacity: 0.8;
+}
+nav:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+nav .logo {
+  float: left;
+  padding-top: 0;
+  margin: 0;
+  padding-left: 30px;
+  width: 300px;
+  height: 80px;
+}
+nav ul {
+  padding-top: 8px;
+  float: right;
+  margin-right: 60px;
+
+  list-style: none;
+  position: relative;
+}
+nav ul li {
+  display: inline-block;
+  background: #cad2c5;
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #2f3e46;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #028f9e;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #238792, 0 0 10px #002e33;
+}
+nav ul ul li a:hover {
+  box-shadow: none;
+}
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s;
+}
+nav ul ul ul {
+  border-top: none;
+}
+nav ul li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul ul li a {
+  line-height: 50px;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,
+.icon,
+input {
+  display: none;
+}
+
+.fa-customize {
+  margin-left: 5px;
+  font-size: 100px;
+}
+.content {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images_Home/Home-Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  overflow: hidden;
+}
+.header {
+  margin-top: 200px;
+}
+.para {
+  margin-bottom: 20px;
+}
+#cont {
+  text-align: center;
+
+  padding: 0px;
+  margin: auto;
+  transform: translate(0%, 1500%);
+}
+.course_button1 {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 1.5vw;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.course_button1:hover {
+  background-color: #028f9e;
+  color: #f2f2f2;
+}
+/*CODE FOR NAV BAR AND HEADDER CONTENT RESPONSIVE*/
+@media all and (max-width: 1148px) {
+  nav ul {
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo {
+    padding-left: 30px;
+    height: 55px;
+    width: 200px;
+  }
+  .show + a,
+  ul {
+    display: none;
+  }
+  nav ul li,
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul li a:hover {
+    box-shadow: none;
+  }
+  .show {
+    display: block;
+    color: black;
+    font-size: 18px;
+    padding: 0 10px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover {
+    color: cyan;
+  }
+  .icon {
+    display: block;
+    color: black;
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul {
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a {
+    padding-left: 40px;
+  }
+  nav ul ul ul a {
+    padding-left: 80px;
+  }
+  nav ul ul ul li {
+    position: static;
+  }
+  [id^="btn"]:checked + ul {
+    display: block;
+  }
+  nav ul ul li {
+    border-bottom: 0px;
+  }
+  span.cancel:before {
+    content: "\f00d";
+  }
+}
+.content {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow: hidden;
+}
+header {
+  font-size: 2.5vw;
+  font-weight: bold;
+  padding: 10px 0;
+}
+p {
+  font-size: 2vw;
+  font-weight: 200;
+}
