@@ -146,7 +146,7 @@ input {
   text-align: center;
   text-decoration: none;
   display: inline;
-  font-size: 1.5vw;
+/*   font-size: 1.5vw; */
   transition-duration: 0.4s;
   cursor: pointer;
   font-weight: bold;
@@ -241,11 +241,11 @@ input {
   overflow: hidden;
 }
 header {
-  font-size: 2.5vw;
+/*   font-size: 2.5vw; */
   font-weight: bold;
   padding: 10px 0;
 }
 p {
-  font-size: 2vw;
+/*   font-size: 2vw; */
   font-weight: 200;
 }
