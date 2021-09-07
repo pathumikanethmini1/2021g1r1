@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+ main section         /*Css of full body container */
+{
+
+     text-align: justify;
+     font-family: 'Poppins', sans-serif;
+     /* margin-left: 100px; */
+     padding-left: 200px;
+     margin: 30px;  
+ 
+}
+.Topic         /* Css of full Topic which is grammer/ challenge*/
+{
+    width: 100%;
+    font-size: 2.4vw;
+    letter-spacing: 0.1vw;
+    color:#354f52;
+
+}
+.outer-box      /* Css of full out box  which is gray color box*/
+{
+   position: relative;
+   background-color: whitesmoke;
+   border-radius: 3px;
+   box-shadow: 1px 3px 4px 0.65px #354f52;
+   width: 100%;
+ 
+   top: 10px;
+
+}
+/* .outer-box div.innert-box
+{
+    margin-top: 0.9%;
+} */
+/* .innert-box   /* Css of full inner box  which have all the contain including question */
+/* {
+    position: relative;
+    width: 97.5%;
+    left: 1.6%;
+    display: inline-block;
+    line-height: 35px;
+    background-color: #cad2c5;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 5px 5px; 
+} */ 
+/* ul.tab-item  /* Css of all tab  */
+/* {
+    position: relative;
+    padding-top: 4vh;
+    padding-left: 1.35vw;
+} */
+/* .tab-item li /* Css of all tab  */
+/* {
+    position: relative;
+    display: inline;
+    list-style-type: none;
+    color: #2f3e46;
+    box-shadow: 0px 1px #cad2c5 ;
+    font-size: 19px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    cursor: pointer;
+} */ *
+
+/* .active   Css when user click one tab */
+/* {
+    border-radius: 5px 5px 0px 0px;
+    background-color: #cad2c5;
+    font-weight: bold;
+    
+} */
+
+
+/* .inactive:hover Css which is not active or click by user */
+/* {
+    border-radius: 5px 5px 0px 0px;
+    background-color: #cad2c5;
+    font-weight: bold;
+} */
+
+.contain /* Css task page shift down*/
+{
+    padding-top: 40px;
+    width: 100%;
+}
+.head,.beging,.Question,.Answer  /* all the text in inner box*/
+{
+    padding-left: 3%;
+    padding-right: 2%;
+}
+
+.head h1,.beging h3{   /* css of top two text in task page*/
+    font-size: 20px;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 36px;
+
+}
+.Question   /* css of Question*/
+{
+    margin-top: 15px;
+    position: relative;
+    display: block;
+    font-size: 27px;
+    font-weight: 500;
+    word-spacing: 2px;
+    line-height: 36px;
+}
+
+.contain ul    /* css of redio button*/
+{
+    position: relative;
+    list-style-type: none;
+    top: 20px;
+}
+.contain ul li /* css of redio button*/
+{
+   /*overflow-x: auto;*/
+   max-width: 200px;
+   line-height: 27px;
+ 
+}
+
+.contain ul li input[type='radio']::after /* css of redio button*/
+{
+    width: 17px;
+    height: 17px;
+    border-radius: 15px;
+    top: -5px;
+    left: -2px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(226, 225, 225);
+}
+.contain ul li input[type='radio']:checked:after /* css of redio button*/
+{
+    width: 17px;
+    height: 17px;
+    border-radius: 15px;
+    top: -5px;
+    left: -2px;
+    position: relative;
+    background-color: #354f52;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+.contain ul li label  /* css of redio button lable*/
+{
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 36px;
+}
+.contain ul.radio li:hover{
+ background-color: rgb(231, 231, 231);
+ font-weight: 900;
+}
+
+.hide{       /* css of page hide*/
+    display:none;
+    visibility:hidden;
+  }
+
+  div.answer-btn ul /* css of summit and next button*/
+  {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      top: 50px;
+      left: 10%;
+      margin-bottom: 100px;
+      width: 85%;
+  }
+  div.answer-btn ul li /* css of summit and next button*/
+  {
+    margin: 0 5px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+     font-size: 18px;
+     font-weight: 500;
+     background-color: #2f3e46;
+     padding: 8px 15px;
+     color: white;
+     border: 1px solid white;
+     border-radius: 10px;
+     box-shadow: 0px 1px 2px #2f3e46;
+     cursor: pointer;
+     margin-bottom: 10vh;
+  }
+  div.answer-btn ul li:hover
+  {
+      background-color: white;
+      color: #2f3e46;
+      border: 1px solid
+  }
+  #net
+  {
+      display: none;
+  }
+  .incorrect  /* css when the answer is incorrect*/
+  {
+      background-color: #be5a5a;
+  }
+  .correct{   /* css when the answer is correct*/
+    background-color: #84a98c;
+  }
+
+  ul span
+  {
+      display: inline;
+      position: absolute;
+      left: 170px;
+  }
+
+  ul .A1
+  {
+    position: absolute;
+    top: 5px;
+    /* display: none; */
+  }
+  ul .A2
+  {
+    position: absolute;
+    top: 40px;
+    /* display: none; */
+  }
+  ul .A3
+  {
+    position: absolute;
+    top: 75px;
+    /* display: none; */
+  }
+  ul .A4
+  {
+    position: absolute;
+    top: 113px;
+    /* display: none; */
+  }
+  #correct.material-icons
+{
+    color: #fff; 
+    width: 24px;
+    height: 24px;
+    display: none;
+    /* background-color: transparent; */
+}
+ #wrong.material-icons
+{
+   
+    color:#fff; 
+    width: 24px;
+    height: 24px;
+    display: none;
+    /* background-color: transparent;*/
+} 
+
+
+   @media screen and (max-width : 800px){
+    main section    /* Css of full body container*/
+    {
+        margin: 8px;
+        margin-top: 40px;
+        padding-left: 0px;
+    }
+    .outer-box  
+    { 
+        padding-right: 10px;
+        float: left;
+    }
+    div.answer-btn ul li
+    {
+        margin-bottom: 0vh;
+    }
+    .hide
+    {
+        display: block;
+        visibility: visible;
+    }
+
+
+
+  }  
+ 
+  @media (max-width: 600px)
+  {
+ 
+    .Topic 
+    {
+        font-size: 3.5vw;
+    }
+    .contain ul li label 
+    {
+        line-height: 25px;
+        font-size: 15px;
+    }
+   
+    div.answer-btn ul
+    {
+       width: 90%;
+       left: -10px;
+    }
+
+    ul span
+    {
+        left: 160px;
+    }
+
+    ul .A1
+    {
+       position: absolute;
+       top: 0px;
+    }
+  ul .A2
+    {
+      position: absolute;
+      top: 26px;
+    }
+  ul .A3
+    {
+      position: absolute;
+      top: 52px;
+    }
+  ul .A4
+    {
+      position: absolute;
+      top: 80px;
+    }
+  }
+
+  @media (max-width: 500px)
+  {
+    .head h1,.beging h3
+    {
+        font-size: 17px;
+        line-height: normal;
+    }
+    .Question   /* css of Question*/
+{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    word-spacing: normal;
+}
+    div.answer-btn ul
+    {
+        float: left;
+        
+    }
+    div.answer-btn ul li
+    {
+        margin-top: 20px;
+    }
+
+    div.answer-btn ul li
+    {
+        font-size: medium;
+    }
+
+    .contain ul li input[type='radio']::after ,.contain ul li input[type='radio']:checked:after
+    {
+        width: 12px;
+        height: 12px;
+        top: -3px;
+      
+    }
+    
+    
+  }
+
+  @media (max-width: 350px)
+  {
+   
+    .contain ul li input[type='radio']::after ,.contain ul li input[type='radio']:checked:after
+    {
+        width: 10px;
+        height: 10px;
+        top: -2px;
+      
+    }
+    .Question 
+    {
+        word-spacing: normal;
+        line-height: 20px;
+        justify-content: left;
+        text-align: inherit;
+    }
+    .contain ul li label  /* css of redio button lable*/
+{
+  
+    font-size: 13px;
+    line-height: 20px;
+}
+    div.answer-btn ul
+    {
+        float: left; 
+    }
+    div.answer-btn ul li
+    {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    /* .tab-item li
+    {
+        font-size: 12px;
+    } */
+  }
+  

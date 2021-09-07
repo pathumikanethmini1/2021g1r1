@@ -1,0 +1,70 @@
+/* chnage */
+button {
+    left: 5px;
+    width: 180px;
+  }
+  
+  .sidePanel {
+    background: #fff;
+  }
+  
+  /* change */
+  .btn {
+    background-color: #354f52;
+    color: #fff;
+  
+    border-color: #fff;
+  }
+  
+  .btn.btn-background-slide::before {
+    background-color: #fff;
+  }
+  
+  .btn.btn-background-slide:hover,
+  .btn.btn-background-slide:focus {
+    color: #354f52;
+    border: 2px solid #354f52;
+  }
+  
+  div.Topic2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.4vw;
+    letter-spacing: 0.1vw;
+    color: #354f52;
+  }
+  .contain {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  
+  .Explane {
+    padding-top: 30px;
+    font-size: 13px;
+  }
+  
+  .Explane h3 {
+    font-weight: 400;
+  }
+  .Example {
+    padding-top: 10px;
+    padding-left: 15px;
+    position: relative;
+    display: block;
+  }
+  
+  .Example h4 {
+    color: #354f52;
+  }
+  
+  .Example ul {
+    top: 0px;
+    padding-bottom: 10px;
+    font-weight: 400;
+  }
+  .Example ul li {
+    width: 100%;
+    list-style-type: circle;
+    font-size: 16px;
+  }
+  

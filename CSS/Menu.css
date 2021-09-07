@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(../Images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 20px;
+  font-weight: bold;
+  letter-spacing: 7px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 10px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+a.active,
+a:hover {
+  background: #52796f;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+section {
+  position: relative;
+}
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  z-index: 0;
+}
+.btn1,
+.btn2 {
+  background-color: rgba(202, 210, 197, 0.6);
+  font-size: 35px;
+  padding: 0px 80px;
+  margin: 25px 0px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #354f52;
+  text-transform: uppercase;
+}
+.btn1 a{
+    color: #354f52;
+}
+.btn1 a:hover{
+    color: white;
+}
+.btn2 a{
+    color: #354f52;
+}
+.btn2 a:hover{
+    color: white;
+}
+.btn > .btn1:hover,
+.btn > .btn2:hover {
+  color: white;
+  background-color: #52796f;
+
+  cursor: pointer;
+}
+.btn1 > .name:hover,
+.btn2 > .name:hover {
+  background-color: #52796f;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 30px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background-color: none;
+    color: black;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+section {
+  height: calc(100vh - 80px);
+}
