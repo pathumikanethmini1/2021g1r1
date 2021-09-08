@@ -206,6 +206,10 @@
   {
       display: none;
   }
+
+.tast-btns a {
+  text-decoration: none;
+}
   .incorrect  /* css when the answer is incorrect*/
   {
       background-color: #be5a5a;
