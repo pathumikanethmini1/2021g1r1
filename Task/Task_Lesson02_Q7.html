@@ -10,6 +10,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="../CSS/TaskRepContent.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        ul span {
+            align-items: flex-end;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            left: 0px;
+        }
+
+        .contain ul li input[type='radio'] {
+            margin-top: 12px;
+        }
+
+        .contain ul li {
+            max-width: 500px;
+            display: flex;
+        }
+
+        #correct.material-icons,
+        #wrong.material-icons {
+            margin-top: 5px;
+        }
+    </style>
 
 </head>
 
@@ -111,54 +135,58 @@
                                             <li> <input type="radio" name="result" id="A1" value="A1">
                                                 <label>She said she may come early. </label>
                                             </li>
-                                            <div class="A1">
+<!--                                             <div class="A1"> -->
                                                 <span class="material-icons" id="correct">
                                                     check_circle
                                                 </span>
                                                 <span class="material-icons" id="wrong">
                                                     cancel
                                                 </span>
-                                            </div>
+<!--                                             </div> -->
+                                            </li>
                                             <li><input type="radio" name="result" id="A2" value="A2">
                                                 <label>She said she might be come early.</label>
-                                            </li>
-                                            <div class="A2">
+                                           
+<!--                                             <div class="A2"> -->
                                                 <span class="material-icons" id="correct">
                                                     check_circle
                                                 </span>
                                                 <span class="material-icons" id="wrong">
                                                     cancel
                                                 </span>
-                                            </div>
+<!--                                             </div> -->
+                                                 </li>
                                             <li><input type="radio" name="result" id="A3" value="A3"> <label>She said she may be come early.
 </label>
-                                            </li>
-                                            <div class="A3">
+                                            
+<!--                                             <div class="A3"> -->
                                                 <span class="material-icons" id="correct">
                                                     check_circle
                                                 </span>
                                                 <span class="material-icons" id="wrong">
                                                     cancel
                                                 </span>
-                                            </div>
+<!--                                             </div> -->
+                                                </li>
                                             <li><input type="radio" name="result" id="A4" value="A4">
                                                 <label>She said she might come early.
 </label>
-                                            </li>
-                                            <div class="A4">
+                                           
+<!--                                             <div class="A4"> -->
                                                 <span class="material-icons" id="correct">
                                                     check_circle
                                                 </span>
                                                 <span class="material-icons" id="wrong">
                                                     cancel
                                                 </span>
-                                            </div>
+<!--                                             </div> -->
+                                                 </li>
                                         </ul>
 
                                     </div>
                                     <div class="answer-btn">
                                         <ul class="tast-btns" id="tast-btns">
-                                            <li id="answer" onclick="checke();"> Submit answer </li>
+                                            <li id="answer" onclick="correct();"> Submit answer </li>
                                             <li class="next" id="net"  onClick="location.href='./Task_Lesson02_Q8.html'">Next Challenge </li>
                                         </ul>
                                     </div>
@@ -188,7 +216,8 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- <script src="answer.js"></script> -->
     <script src="../JS/TaskScript.js"></script>
-    <script src="../JS/TaskTab4.js"></script>
+    <script src="../JS/check4.js"></script>
+<!--     <script src="../JS/TaskTab4.js"></script> -->
 
 </body>
 
