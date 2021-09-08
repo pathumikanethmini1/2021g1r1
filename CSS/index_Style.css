@@ -21,7 +21,7 @@ nav {
   padding: 0px;
 }
 nav:not(img) {
-  opacity: 0.8;
+  opacity: 1.0;
 }
 nav:after {
   content: "";
