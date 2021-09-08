@@ -31,7 +31,9 @@ nav{
     font-size: 35px;
     font-weight: 600;
   }
-
+  nav .logo a{
+      color: #fff:
+  }
   nav ul{
     display: flex;
     flex-wrap: wrap;
