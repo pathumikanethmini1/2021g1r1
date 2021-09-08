@@ -26,8 +26,8 @@ nav{
   }
 
 /* chnage*/
-  label.logo {    
-  color: white;
+ .logo {    
+  color: #fff;
   font-size: 35px;
   line-height: 80px;
   padding: 0 20px;
@@ -35,7 +35,7 @@ nav{
   letter-spacing: 7px;
 }
 /* chnage*/
-  label.logo a
+ .logo a
 {
   text-decoration: none;
   color: #fff;
