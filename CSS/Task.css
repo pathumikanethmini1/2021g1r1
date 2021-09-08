@@ -25,15 +25,21 @@ nav{
     flex-wrap: wrap; 
   }
 
-
-  nav .logo{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-  }
-  nav .logo a{
-      color: #fff:
-  }
+/* chnage*/
+  label.logo {    
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 20px;
+  font-weight: bold;
+  letter-spacing: 7px;
+}
+/* chnage*/
+  label.logo a
+{
+  text-decoration: none;
+  color: #fff;
+}
   nav ul{
     display: flex;
     flex-wrap: wrap;
