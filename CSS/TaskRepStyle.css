@@ -26,11 +26,25 @@ nav{
   }
 
 
-  nav .logo{
+/*   nav .logo{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
-  }
+  } */
+
+.logo {    
+  color: #fff;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 0px;
+  font-weight: bold;
+}
+/* chnage*/
+ .logo a
+{
+  text-decoration: none;
+  color: #fff;
+}
 
   nav ul{
     display: flex;
