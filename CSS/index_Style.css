@@ -129,8 +129,8 @@ input {
 #cont {
   text-align: center;
   margin-top: 3%;
-  padding: 0px;
-  margin: auto;
+  padding: 2px;
+/*   margin: auto; */
   transform: translate(0%, 1500%);
 }
 .fpage {
